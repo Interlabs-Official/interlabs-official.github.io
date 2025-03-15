@@ -541,86 +541,25 @@
     <nav class="navbar">
         <img src="/BetterKMR/logo.png" alt="BetterKMR Logo" class="logo">
         <div class="nav-links">
-            <a href="#features">Features</a>
-            <a href="#install-section">Install</a>
             <a href="/BetterKMR/docs/">Docs</a>
             <a href="https://discord.gg/4MkRmFmHz2">Discord</a>
+            <a href="https://github.com/Interlabs-Official/BetterKMR/">GitHub</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <div class="main-content">
-        <h1>Elevate Your Kamar Experience</h1>
-        <p class="descone">BetterKMR transforms your everyday portal into a personalized and enhanced environment with powerful themes, customization options, and productivity features.</p>
+        <h1>Welcome to BetterKMR</h1>
+        <p class="descone">BetterKMR transforms your everyday school.kiwi/kamar portal into a personalized and enhanced environment with awesome themes, customization options, and even more.</p>
         <div class="cta-buttons">
-            <a href="#install-section" class="cta-button">
-                <i class="fas fa-download"></i> Install Now
+            <a href="https://chromewebstore.google.com/detail/betterkmr/ldeihnclejjjlcoojbonlenhlbjibjfn" class="cta-button">
+                <i class="fa-brands fa-chrome"></i> Add to Chrome
             </a>
             <a href="/BetterKMR/docs/" class="cta-button secondary">
                 <i class="fas fa-book"></i> View Documentation
             </a>
         </div>
-
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <p>SCROLL DOWN</p>
-            <div class="mouse"></div>
-        </div>
     </div>
-
-    <!-- About Section -->
-    <div class="info-section">
-        <h2>What is BetterKMR?</h2>
-        <p>BetterKMR is a powerful browser extension that revolutionizes your Kamar experience. We've built it to address the limitations of the standard interface while adding powerful customization options that make your daily interactions more intuitive, efficient, and visually appealing.</p>
-
-        <!-- Features Grid -->
-        <div class="features" id="features">
-            <div class="feature-card">
-                <i class="fas fa-palette feature-icon"></i>
-                <h3>Beautiful Themes</h3>
-                <p>Choose from pre-designed themes or create your own with our intuitive theme editor. From dark mode to vibrant colors, express yourself.</p>
-            </div>
-
-            <div class="feature-card">
-                <i class="fas fa-user-circle feature-icon"></i>
-                <h3>Profile Customization</h3>
-                <p>Personalize your profile with custom avatars, backgrounds, and style options that make the interface truly yours.</p>
-            </div>
-
-            <div class="feature-card">
-                <i class="fas fa-rocket feature-icon"></i>
-                <h3>Performance Boost</h3>
-                <p>Experience faster loading times and smoother interactions with our optimized code that enhances the original Kamar functionality.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Install Section -->
-    <div class="install-section" id="install-section">
-        <h2>Get Started Today</h2>
-        <p>BetterKMR is available on multiple platforms. Choose your preferred browser and start enjoying the enhanced experience right away:</p>
-        <div class="install-links">
-            <a href="https://chromewebstore.google.com/detail/betterkmr/ldeihnclejjjlcoojbonlenhlbjibjfn" class="install-button">
-                <i class="fab fa-chrome"></i>
-                <span>
-                    <strong>Chrome Web Store</strong><br>
-                    <small>For Chrome, Edge, Brave</small>
-                </span>
-            </a>
-            <a href="https://github.com/Interlabs-Official/BetterKMR/releases" class="install-button">
-                <i class="fab fa-github"></i>
-                <span>
-                    <strong>GitHub Release</strong><br>
-                    <small>For manual installation</small>
-                </span>
-            </a>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Interlabs. All Rights Reserved.</p>
-    </footer>
 
     <!-- JavaScript -->
     <script>
@@ -638,55 +577,6 @@
                     behavior: 'smooth'
                 });
             });
-        });
-
-        const cursor = document.querySelector('.cursor');
-        const cursorDot = document.querySelector('.cursor-dot');
-
-        if (!('ontouchstart' in window)) {
-            cursor.style.display = 'block';
-            cursorDot.style.display = 'block';
-
-            document.addEventListener('mousemove', (e) => {
-                cursor.style.left = e.clientX + 'px';
-                cursor.style.top = e.clientY + 'px';
-
-                cursorDot.style.left = e.clientX + 'px';
-                cursorDot.style.top = e.clientY + 'px';
-            });
-
-            const interactiveElements = document.querySelectorAll('a, button, .feature-card');
-
-            interactiveElements.forEach(element => {
-                element.addEventListener('mouseenter', () => {
-                    cursor.style.width = '50px';
-                    cursor.style.height = '50px';
-                    cursor.style.backgroundColor = 'rgba(41, 121, 255, 0.1)';
-                    cursor.style.borderColor = 'rgba(41, 121, 255, 0.5)';
-                });
-
-                element.addEventListener('mouseleave', () => {
-                    cursor.style.width = '40px';
-                    cursor.style.height = '40px';
-                    cursor.style.backgroundColor = 'transparent';
-                    cursor.style.borderColor = 'var(--accent-primary)';
-                });
-            });
-        }
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.feature-card').forEach(card => {
-            card.style.opacity = 0;
-            card.style.transform = 'translateY(30px)';
-            observer.observe(card);
         });
     </script>
 </body>
