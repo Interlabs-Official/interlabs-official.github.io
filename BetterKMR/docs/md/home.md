@@ -1,4 +1,4 @@
-![BetterKMR Logo](../BetterKMR/assets/images/logo.png)
+![BetterKMR Logo](../BetterKMR/logo.png)
 
 # 🌊 Welcome!
 
