@@ -1,4 +1,4 @@
-![BetterKMR Logo](../BetterKMR/logo.png)
+![BetterKMR Logo](https://github.com/Interlabs-Official/interlabs-official.github.io/blob/main/BetterKMR/logo.png?raw=true)
 
 # 🌊 Welcome!
 
