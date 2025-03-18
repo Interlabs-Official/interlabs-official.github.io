@@ -1,5 +1,4 @@
 /* no a lot of this I did not make I just wanted a better version of DocHaste so uhhh.. AI! */
-
 async function initializeDocs() {
   try {
     const response = await fetch('docs.json');
@@ -11,6 +10,16 @@ async function initializeDocs() {
 
     buildSidebar(pages, tabsContainer, defaultPage);
     initializeUI();
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = urlParams.get('page');
+
+    if (page) {
+      const pageName = decodeURIComponent(page);
+      loadPageFromUrl(pageName, pages);
+    } else {
+      loadPageFromUrl("home", pages);
+    }
   } catch (error) {
     console.error("Error loading docs.json:", error);
     throwError(`meta/700.md`, error);
@@ -18,7 +27,6 @@ async function initializeDocs() {
 }
 
 function buildSidebar(pages, parentElement, defaultPage, currentPath = '') {
-
   const categoryIcons = {
     'Introduction': 'fa-home',
     'Getting Started': 'fa-rocket',
@@ -29,7 +37,6 @@ function buildSidebar(pages, parentElement, defaultPage, currentPath = '') {
     'FAQ': 'fa-question-circle',
     'Troubleshooting': 'fa-wrench',
     'Advanced': 'fa-cogs',
-
     'default': 'fa-file-alt'
   };
 
@@ -50,9 +57,12 @@ function buildSidebar(pages, parentElement, defaultPage, currentPath = '') {
     listItem.setAttribute('data-path', fullPath);
 
     if (typeof content === 'string') {
+
+      const pageLink = name === defaultPage ? `?page=${encodeURIComponent(name.toLowerCase().replace(/\s+/g, '-'))}` : `?page=${encodeURIComponent(name.toLowerCase().replace(/\s+/g, '-'))}`;
+      link.href = pageLink;
       link.onclick = (e) => {
         e.stopPropagation();
-        loadContent(`md/${content}`, fullPath);
+        loadPageFromUrl(name, pages);
         highlightActiveItem(listItem);
       };
       parentElement.appendChild(listItem);
@@ -76,6 +86,27 @@ function buildSidebar(pages, parentElement, defaultPage, currentPath = '') {
       buildSidebar(content, nestedList, defaultPage, fullPath);
     }
   }
+}
+
+function loadPageFromUrl(pageName, pages) {
+  for (const [category, content] of Object.entries(pages)) {
+    if (typeof content === 'string') {
+      const formattedPageName = category.toLowerCase().replace(/\s+/g, '-');
+      if (pageName === formattedPageName) {
+        loadContent(`md/${content}`, category);
+        return;
+      }
+    } else if (typeof content === 'object') {
+      for (const [subCategory, subContent] of Object.entries(content)) {
+        const formattedSubCategoryName = subCategory.toLowerCase().replace(/\s+/g, '-');
+        if (pageName === formattedSubCategoryName) {
+          loadContent(`md/${subContent}`, `${category} > ${subCategory}`);
+          return;
+        }
+      }
+    }
+  }
+  loadContent(`meta/404.md`, 'Error: Page Not Found');
 }
 
 function highlightActiveItem(item) {
