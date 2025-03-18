@@ -2,6 +2,9 @@
     "default_page": "Home",
     "pages": {
       "Home": "home.md",
+        "Changelog": {
+        "v1.1.0": "changelog/v1_1_0.md",
+      },
       "Guides": {
         "🏄 | Creating Custom Themes": "guides/creating-custom-themes.md",
         "🔨 | Building & Developing": "guides/building-developing.md"
