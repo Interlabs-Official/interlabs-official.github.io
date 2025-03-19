@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>BetterKMR</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>🔨 Building &amp; Developing - BetterKMR</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/darcula.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">BetterKMR</a>
+                <a class="navbar-brand" href="../..">BetterKMR</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,30 +35,30 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Home</a>
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="faq/" class="nav-link">Frequently Asked Questions</a>
+                                <a href="../../faq/" class="nav-link">Frequently Asked Questions</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Changelog</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="changelog/v1_1_0/" class="dropdown-item">v1.1.0 Changelog</a>
+    <a href="../../changelog/v1_1_0/" class="dropdown-item">v1.1.0 Changelog</a>
 </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Guides</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Guides</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="guides/building-developing/" class="dropdown-item">🔨 Building &amp; Developing</a>
+    <a href="./" class="dropdown-item active" aria-current="page">🔨 Building &amp; Developing</a>
 </li>
                                     
 <li>
-    <a href="guides/creating-custom-themes/" class="dropdown-item">🏄 Creating Custom Themes</a>
+    <a href="../creating-custom-themes/" class="dropdown-item">🏄 Creating Custom Themes</a>
 </li>
                                 </ul>
                             </li>
@@ -71,12 +71,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../../changelog/v1_1_0/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="faq/" class="nav-link">
+                                <a rel="next" href="../creating-custom-themes/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -98,13 +98,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#welcome" class="nav-link">🌊 Welcome!</a>
+            <li class="nav-item" data-bs-level="1"><a href="#building-developing" class="nav-link">🔨 Building &amp; Developing</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#introduction" class="nav-link">📝 Introduction</a>
+            <li class="nav-item" data-bs-level="2"><a href="#cloning-and-basic-runningbuilding-from-the-readme" class="nav-link">Cloning and basic running/building (from the README)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#installation" class="nav-link">📦 Installation</a>
+            <li class="nav-item" data-bs-level="2"><a href="#modifying-the-code" class="nav-link">Modifying the code</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#my-changes-arent-always-being-reflected" class="nav-link">My changes aren't always being reflected!</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#have-fun" class="nav-link">Have fun!</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -115,15 +123,49 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p><img alt="BetterKMR Logo" src="https://github.com/Interlabs-Official/interlabs-official.github.io/blob/main/BetterKMR/logo.png?raw=true" /></p>
-<h1 id="welcome">🌊 Welcome!</h1>
-<p>This is the official documentation for BetterKMR. There's not much on here at the moment, but we're working on it!</p>
-<h2 id="introduction">📝 Introduction</h2>
-<p>BetterKMR is a browser extension that aims to improve the user experience of school.kiwi websites for various schools across New Zealand.
-Recent Chromium based browsers are supported (e.g. Google Chrome, Brave, Arc) but as of now Firefox based browsers are also supported (e.g. Firefox, Zen Browser, LibreWolf).</p>
-<h2 id="installation">📦 Installation</h2>
-<p>Installing BetterKMR is easy! You can download the latest version from both the Chrome Web Store and Firefox Add-ons.
-To install BetterKMR manually, you can download the latest release from the <a href="https://github.com/InterLabs/BetterKMR/releases">releases page</a>.</p></div>
+<h1 id="building-developing">🔨 Building &amp; Developing</h1>
+<p>In v1.0.1, BetterKMR shifted from the pure vanilla experience to a more modern, Webpack-based experience. This guide will show you how to build and modify BetterKMR.</p>
+<h2 id="cloning-and-basic-runningbuilding-from-the-readme">Cloning and basic running/building (from the README)</h2>
+<p>To build this project, you must have <a href="https://git-scm.com">Git</a> and <a href="https://www.npmjs.com">npm</a> installed. You can use <a href="https://docs.npmjs.com/cli/v8/commands/npx">npx</a> and other alternatives if you prefer.<br>
+You can easily get BetterKMR up and running by building in a matter of minutes. Please note that this is intended for development purposes, and we suggest getting this extension via the Chrome Web Store otherwise.
+To start, just clone the repository:</p>
+<pre><code>git clone https://github.com/Interlabs-Official/BetterKMR.git
+</code></pre>
+<p>Once done, change your current directory to the newly cloned one and run <code>npm install</code> to gather the required dependencies.</p>
+<pre><code class="language-bash">cd BetterKMR
+npm install
+</code></pre>
+<p>Note that <code>npm install</code> may show a few warnings. This is fine to ignore for now.<br>
+To start using an almost live-refreshable version of BetterKMR (for active developing purposes), do the following command:</p>
+<pre><code>npm run dev
+</code></pre>
+<p>If you would like to build BetterKMR for browsers:</p>
+<pre><code class="language-bash">npm run build:chrome
+# or
+npm run build:firefox
+# or for both
+npm run build:all
+</code></pre>
+<p>Please note that the compiled version of BetterKMR will be available in the <code>dist</code> folder. This includes the live-refreshable version as well.</p>
+<h2 id="modifying-the-code">Modifying the code</h2>
+<p>To modify the code, <a href="https://code.visualstudio.com">Visual Studio Code</a> is recommended, but you can use your preferred IDE.
+A lot of what you need has already been covered above, but here's the folders and what purpose they have:
+- <code>src/</code> - This is where most of the tweakable code is located (e.g. themes, modules, etc.)
+- <code>docs/</code> - This is where the documentation for BetterKMR is located (what you're reading)
+- <code>dist/</code> - This is where the compiled version of BetterKMR is located. This includes the live-refreshable version as well.
+- <code>details/</code> - This is where extra details are located, for example, class name tooltips.
+- <code>frameworks/</code> - A folder containing necessary frameworks for BetterKMR to function correctly.
+- <code>settings/</code> - Contains settings related files, such as the settings page and the code editor.
+- <code>legacy/</code> - A folder containing old, archived BetterKMR code. It is planned to be deleted in the future.
+- <code>icon/</code> - Contains icon assets for BetterKMR.
+- <code>assets/</code> - Contains other assets, such as theme backgrounds and misc images.</p>
+<h2 id="my-changes-arent-always-being-reflected">My changes aren't always being reflected!</h2>
+<p>If you're modifying internal code, you may notice Webpack (the bundling tool &amp; live refresher) doesn't always reflect those changes. In this case, you'll need to manually refresh the extension. This is a known issue and we're unsure if this will be fixed in the future.</p>
+<h2 id="have-fun">Have fun!</h2>
+<p>Have fun messing around with the code! Remember that:
+- The code in <code>src/</code> is designed to be modular, so you can easily add your own modules or themes. However, custom themes should <em>really</em> be added in Settings.
+- Always stick to the AGPL-3.0 license when modifying the code.
+- BetterKMR is intended to be a community-driven project, so if you have any ideas or suggestions, feel free to open an issue or a pull request on the <a href="https://github.com/Interlabs-Official/BetterKMR/issues">GitHub repo</a> or via our <a href="https://discord.gg/4MkRmFmHz2">Discord server</a>.</p></div>
             </div>
         </div>
 
@@ -131,13 +173,13 @@ To install BetterKMR manually, you can download the latest release from the <a h
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -202,8 +244,3 @@ To install BetterKMR manually, you can download the latest release from the <a h
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2025-03-19 06:39:42.462025+00:00
--->

@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>BetterKMR</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>v1.1.0 Changelog - BetterKMR</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/darcula.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">BetterKMR</a>
+                <a class="navbar-brand" href="../..">BetterKMR</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,17 +35,17 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Home</a>
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="faq/" class="nav-link">Frequently Asked Questions</a>
+                                <a href="../../faq/" class="nav-link">Frequently Asked Questions</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Changelog</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Changelog</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="changelog/v1_1_0/" class="dropdown-item">v1.1.0 Changelog</a>
+    <a href="./" class="dropdown-item active" aria-current="page">v1.1.0 Changelog</a>
 </li>
                                 </ul>
                             </li>
@@ -54,11 +54,11 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="guides/building-developing/" class="dropdown-item">🔨 Building &amp; Developing</a>
+    <a href="../../guides/building-developing/" class="dropdown-item">🔨 Building &amp; Developing</a>
 </li>
                                     
 <li>
-    <a href="guides/creating-custom-themes/" class="dropdown-item">🏄 Creating Custom Themes</a>
+    <a href="../../guides/creating-custom-themes/" class="dropdown-item">🏄 Creating Custom Themes</a>
 </li>
                                 </ul>
                             </li>
@@ -71,12 +71,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../../faq/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="faq/" class="nav-link">
+                                <a rel="next" href="../../guides/building-developing/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -98,16 +98,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#welcome" class="nav-link">🌊 Welcome!</a>
+            <li class="nav-item" data-bs-level="1"><a href="#v110-changelog" class="nav-link">v1.1.0 Changelog</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#introduction" class="nav-link">📝 Introduction</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#installation" class="nav-link">📦 Installation</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -115,15 +107,29 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p><img alt="BetterKMR Logo" src="https://github.com/Interlabs-Official/interlabs-official.github.io/blob/main/BetterKMR/logo.png?raw=true" /></p>
-<h1 id="welcome">🌊 Welcome!</h1>
-<p>This is the official documentation for BetterKMR. There's not much on here at the moment, but we're working on it!</p>
-<h2 id="introduction">📝 Introduction</h2>
-<p>BetterKMR is a browser extension that aims to improve the user experience of school.kiwi websites for various schools across New Zealand.
-Recent Chromium based browsers are supported (e.g. Google Chrome, Brave, Arc) but as of now Firefox based browsers are also supported (e.g. Firefox, Zen Browser, LibreWolf).</p>
-<h2 id="installation">📦 Installation</h2>
-<p>Installing BetterKMR is easy! You can download the latest version from both the Chrome Web Store and Firefox Add-ons.
-To install BetterKMR manually, you can download the latest release from the <a href="https://github.com/InterLabs/BetterKMR/releases">releases page</a>.</p></div>
+<h1 id="v110-changelog">v1.1.0 Changelog</h1>
+<p>v1.1.0 Released! Including many new features, fixes and overall improvements.</p>
+<h3 id="new-features"><strong>New Features</strong></h3>
+<ul>
+<li>Better Notices - Ability to dismiss notices, and pin them to keep them on your notices feed forever! Enabled by default, can be disabled on General settings under "Better Notices Page"</li>
+<li>Visual Theme Editor - Produce your own themes with the ability to customise all elements, without needing the ability to code! Simple select different elements you would like to stylise, and select the colour or font of your choice.</li>
+</ul>
+<h3 id="changes"><strong>Changes</strong></h3>
+<ul>
+<li>Update notification on Kamar whenever we update our extension</li>
+<li>Changelog page on the extension menu, so you can read all of these new update notes!</li>
+<li>Better style loader</li>
+<li>Update Star Destroyers background picture</li>
+<li>Shrink non-period boxes on timetable</li>
+<li>Change Justified's back to yellow - Community feedback</li>
+<li>Add a way to submit your own theme</li>
+</ul>
+<h3 id="fixes"><strong>Fixes</strong></h3>
+<ul>
+<li>Fix individual theme about page issues</li>
+<li>Private mode now hides Student Details too</li>
+<li>Apply button now shows custom themes in use on first load</li>
+</ul></div>
             </div>
         </div>
 
@@ -131,13 +137,13 @@ To install BetterKMR manually, you can download the latest release from the <a h
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -202,8 +208,3 @@ To install BetterKMR manually, you can download the latest release from the <a h
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2025-03-19 06:39:42.462025+00:00
--->
