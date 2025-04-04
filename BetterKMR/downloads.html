@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BetterKMR</title>
@@ -59,7 +59,6 @@
         .navbar {
             background: rgba(25, 25, 33, 0.8);
             backdrop-filter: blur(10px);
-            position: fixed;
             top: 0;
             width: 100%;
             display: flex;
@@ -525,7 +524,73 @@
                 justify-content: center;
             }
         }
-    </style>
+    /* Additional styles for the downloads page */
+    .downloads-container {
+      max-width: 75%;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #2b2b2b;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1, h2 {
+      color: #ffffff;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: #1e1e1e;
+      color: #ffffff;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #444444;
+    }
+
+    th {
+      background-color: #3a3a3a;
+    }
+
+    tr:hover {
+      background-color: #333333;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .direct {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .button:hover {
+      background-color: #005fa3;
+    }
+
+    .changelog-link {
+      color: #007acc;
+      text-decoration: none;
+    }
+
+    .changelog-link:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
     <!-- Preloader -->
@@ -537,9 +602,10 @@
     <div class="cursor"></div>
     <div class="cursor-dot"></div>
 
-    <!-- Navbar -->
     <nav class="navbar">
+        <a href="/">
         <img src="/BetterKMR/logo.png" alt="BetterKMR Logo" class="logo">
+    </a>
         <div class="nav-links">
             <a href="/BetterKMR/downloads.html">Downloads</a>
             <a href="/BetterKMR/docs/">Docs</a>
@@ -547,20 +613,96 @@
             <a href="https://discord.gg/4MkRmFmHz2">Discord</a>
         </div>
     </nav>
+ 
 
-    <!-- Hero Section -->
-    <div class="main-content">
-        <h1>Welcome to BetterKMR</h1>
-        <p class="descone">BetterKMR transforms your everyday Kamar portal into a personalized and enhanced environment with awesome themes, customization options, and even more.</p>
-        <div class="cta-buttons">
-            <a href="https://chromewebstore.google.com/detail/betterkmr/ldeihnclejjjlcoojbonlenhlbjibjfn" class="cta-button">
-                <i class="fa-brands fa-chrome"></i> Add to Chrome
-            </a>
-            <a href="/BetterKMR/docs/" class="cta-button secondary">
-                <i class="fas fa-book"></i> View Documentation
-            </a>
-        </div>
+
+<div class="downloads-container">
+
+
+    <h1>Downloads</h1>
+    <h2 style="margin-top: 10px;">Direct Installation</h2>
+    <div class="direct">
+    <a href="https://chromewebstore.google.com/detail/betterkmr/ldeihnclejjjlcoojbonlenhlbjibjfn" class="button ">Chrome Web Store</a>
+    <a href="/BetterKMR/firefox-builds/latest.xpi" class="button">Firefox Latest</a>
     </div>
+
+  
+  <!-- Chrome Section -->
+  <section style="margin-top: 20px;">
+    <h2>Chrome</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Version</th>
+          <th>Release Date</th>
+          <th>Changelog</th>
+          <th>Download</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.1.1</td>
+          <td>30-03-2025</td>
+          <td><a href="/BetterKMR/docs/changelog/v1_1_1/" class="changelog-link">View here</a></td>
+          <td><a href="https://github.com/Interlabs-Official/BetterKMR/releases/download/v1.1.1/chrome.zip" class="button">Download</a></td>
+        </tr>
+        <tr>
+          <td>1.1.0</td>
+          <td>19-03-2025</td>
+          <td><a href="/BetterKMR/docs/changelog/v1_1_0/" class="changelog-link">View here</a></td>
+          <td><a href="https://github.com/Interlabs-Official/BetterKMR/releases/download/v1.1.0/extension-chrome.zip" class="button">Download</a></td>
+        </tr>
+        <tr>
+          <td>1.0.0</td>
+          <td>12-03-2025</td>
+          <td>N/A</td>
+          <td><a href="https://github.com/Interlabs-Official/BetterKMR/releases/download/v1.0.0/extension-chrome.zip" class="button">Download</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Firefox Section -->
+  <section style="margin-top: 40px;">
+    <h2>Firefox</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Version</th>
+          <th>Release Date</th>
+          <th>Changelog</th>
+          <th>Download</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.1.1</td>
+          <td>30-03-2025</td>
+          <td><a href="/BetterKMR/docs/changelog/v1_1_1/" class="changelog-link">View here</a></td>
+          <td><a href="/BetterKMR/firefox-builds/betterkmr-1.1.1.xpi" class="button">Download</a></td>
+        </tr>
+        <tr>
+          <td>1.1.0</td>
+          <td>24-03-2025</td>
+          <td><a href="/BetterKMR/docs/changelog/v1_1_0/" class="changelog-link">View here</a></td>
+          <td><a href="/BetterKMR/firefox-builds/betterkmr-1.1.0.xpi" class="button">Download</a></td>
+        </tr>
+        <tr>
+          <td>1.0.0</td>
+          <td>12-03-2025</td>
+          <td>N/A</td>
+          <td><a href="https://github.com/Interlabs-Official/BetterKMR/releases/download/v1.0.0/extension-firefox.zip" class="button">Download</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+</div>
+
+<footer class="footer">
+  <!-- Footer content from existing site -->
+  © Interlabs - All Rights Reserved
+</footer>
 
     <!-- JavaScript -->
     <script>
@@ -580,5 +722,7 @@
             });
         });
     </script>
+
 </body>
 </html>
+
