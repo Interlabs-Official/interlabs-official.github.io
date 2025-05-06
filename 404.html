@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <meta name="robots" content="noindex">
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2em;
+    }
+  </style>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      var query = window.location.search || '';
+      var hash = window.location.hash || '';
+
+      if (path.startsWith('/BetterKMR/docs')) {
+        var suffix = path.substring('/BetterKMR/docs'.length);
+        var newUrl = '/betterkmr-docs' + suffix + query + hash;
+        window.location.replace(newUrl);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <h1>404</h1>
+  <h2>Page not found</h2>
+  <p>If you were meant to go to the docs, for example, you should be redirected automatically.</p>
+  <p>If you are not redirected automatically, <a id="redirect-link" href="#">click here</a>.</p>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      var query = window.location.search || '';
+      var hash = window.location.hash || '';
+
+      if (path.startsWith('/BetterKMR/docs')) {
+        var suffix = path.substring('/BetterKMR/docs'.length);
+        var newUrl = '/betterkmr-docs' + suffix + query + hash;
+        document.getElementById('redirect-link').href = newUrl;
+      }
+    })();
+  </script>
+</body>
+</html>
